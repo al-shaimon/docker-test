@@ -23,7 +23,7 @@ services:
       - db
     image: phpmyadmin
     ports:
-      - '8080:80'    
+      - '8080:80'
     restart: always
     environment:
       PMA_HOST: db
@@ -51,3 +51,6 @@ networks:
   wpNetwork:
 volumes:
   db_data:
+
+# docker-compose up -d
+# Run this in terminal
